@@ -2,6 +2,7 @@
 " TODO:
 "   - Investigate any possibilities for highlighting half-character vertically.
 "   - It should be possible to support two players with two snakes.
+" command! Snake :call <SID>Nibble()
 
 if v:version < 700
   echomsg 'You need at least Vim 7.0 to run this version of nibble.vim.'
@@ -22,8 +23,6 @@ let loaded_nibble = 1
 "   at the end
 let s:save_cpo = &cpo
 set cpo&vim
-
-"command! Snake :call <SID>Nibble()
 
 " Initialization {{{
 
